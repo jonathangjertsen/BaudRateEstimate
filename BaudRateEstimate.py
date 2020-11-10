@@ -19,4 +19,8 @@ class BaudRateEstimate(DigitalMeasurer):
             self.state = bitstate
 
     def measure(self):
-        return { "baud_rate": 1 / np.percentile(self.pulses, 1) }
+        try:
+            baud_rate = 1 / np.percentile(self.pulses, 1)
+        except:
+            baud_rate = 0
+        return { "baud_rate": baud_rate }
