@@ -2,7 +2,7 @@
   "name": "Baud rate estimate",
   "apiVersion": "1.0.0",
   "author": "Jonathan Reichelt Gjetsen",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Estimates the baud rate of a digital signal.",
   "extensions": {
     "BaudRateEstimate": {
