@@ -13,7 +13,7 @@ class BaudRateEstimate(DigitalMeasurer):
 
     def process_data(self, data):
         for time, bitstate in data:
-            if self.state is not None or self.last_edge is not None and self.state != bitstate:
+            if self.state is not None and self.last_edge is not None and self.state != bitstate:
                 self.pulses.append(float(time - self.last_edge))
             self.last_edge = time
             self.state = bitstate
