@@ -1,0 +1,20 @@
+{
+  "name": "Baud rate estimate",
+  "apiVersion": "1.0.0",
+  "author": "Jonathan R Gjetsen",
+  "version": "0.0.1",
+  "description": "Estimates the baud rate of a digital signal.",
+  "extensions": {
+    "BaudRateEstimate": {
+      "type": "DigitalMeasurement",
+      "entryPoint": "BaudRateEstimate.BaudRateEstimate",
+      "metrics": {
+        "baud_rate": {
+          "name": "Baud rate",
+          "notation": "f<sub>baud</sub>",
+          "units": "Hz"
+        }
+      }
+    }
+  }
+}
